@@ -5,7 +5,8 @@
 GAME: Brain-even
 <a href="https://asciinema.org/a/HWyt24ZSvlMA4UnQ07ZaEIFVl" target="_blank"><img src="https://asciinema.org/a/HWyt24ZSvlMA4UnQ07ZaEIFVl.svg" /></a>
 
-
-
 GAME: Brain-Calc
 <a href="https://asciinema.org/a/c8NAz5HnV7RqXBcQDAT70JlHZ" target="_blank"><img src="https://asciinema.org/a/c8NAz5HnV7RqXBcQDAT70JlHZ.svg" /></a>
+
+GAME: Brain-gcd
+<a href="https://asciinema.org/a/7UF3RyvhKMqZKXEwARhjlTEkg" target="_blank"><img src="https://asciinema.org/a/7UF3RyvhKMqZKXEwARhjlTEkg.svg" /></a>
