@@ -1,7 +1,7 @@
 import engineGame from '../index.js';
 import getRandomNum from '../getRandomNum.js';
 
-const gameTask = 'What is the result of the expression?';
+const gameTask = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const gameLogic = () => {
   const randomNumber = getRandomNum(100);

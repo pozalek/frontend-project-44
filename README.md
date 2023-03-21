@@ -10,3 +10,5 @@ GAME: Brain-Calc
 
 GAME: Brain-gcd
 <a href="https://asciinema.org/a/7UF3RyvhKMqZKXEwARhjlTEkg" target="_blank"><img src="https://asciinema.org/a/7UF3RyvhKMqZKXEwARhjlTEkg.svg" /></a>
+
+GAME: Brain-progression
