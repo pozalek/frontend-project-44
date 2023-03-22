@@ -1,30 +1,29 @@
 import engineGame from '../index.js';
-import getRandomNum from '../getRandomNum.js';
-
-const gameTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const getRandomArbitrary = (min, max) => Math.ceil(Math.random() * (max - min) + min);
+const gameTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const progression = () => {
-  const progressionLength = getRandomArbitrary(5, 9);
-  let randomNumber = getRandomNum(50);
-  const progressionStep = getRandomArbitrary(2, 5);
-  const arr = [randomNumber];
+const isPrime = (n) => {
+  if (n < 2) {
+    return 'Число должно быть больше 1!!!';
+  } if (n === 2) {
+    return 'yes';
+  }
 
-  for (let i = 0; i < progressionLength; i += 1) {
-    arr.push(randomNumber += progressionStep);
-  } return arr;
+  const limit = Math.sqrt(n);
+  for (let i = 2; i <= limit; i += 1) {
+    if (n % i === 0) {
+      return 'no';
+    }
+  }
+
+  return 'yes';
 };
 
 const gameLogic = () => {
-  const arr = progression();
-  // console.log(arr);
-  const hiddenElement = getRandomArbitrary(0, arr.length - 1);
-  const answer = String(arr[hiddenElement]);
-  arr[hiddenElement] = '..';
-
-  const question = arr.join(' ');
-
+  const randomNumber = getRandomArbitrary(2, 50);
+  const question = randomNumber;
+  const answer = isPrime(randomNumber);
   return [question, answer];
 };
 
