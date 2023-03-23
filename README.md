@@ -2,8 +2,8 @@
 [![Actions Status](https://github.com/pozalek/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/pozalek/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/3a5508b09e7feaa12594/maintainability)](https://codeclimate.com/github/pozalek/frontend-project-44/maintainability)
 
-## "Brain games" project ##
-The Brain Games includes 5 console games.
+## "Brain Games" project ##
+The "Brain Games" includes 5 console games.
 
 ## Install
 Clone the repository and install all dependencies. To start the game enter the command brain-even, brain-calc etc.
