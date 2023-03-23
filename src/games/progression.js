@@ -18,7 +18,6 @@ const progression = () => {
 
 const gameLogic = () => {
   const arr = progression();
-  // console.log(arr);
   const hiddenElement = getRandomArbitrary(0, arr.length - 1);
   const answer = String(arr[hiddenElement]);
   arr[hiddenElement] = '..';

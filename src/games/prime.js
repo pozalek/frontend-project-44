@@ -1,6 +1,5 @@
 import engineGame from '../index.js';
 
-const getRandomArbitrary = (min, max) => Math.ceil(Math.random() * (max - min) + min);
 const gameTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (n) => {
@@ -19,6 +18,8 @@ const isPrime = (n) => {
 
   return 'yes';
 };
+
+const getRandomArbitrary = (min, max) => Math.ceil(Math.random() * (max - min) + min);
 
 const gameLogic = () => {
   const randomNumber = getRandomArbitrary(2, 50);
