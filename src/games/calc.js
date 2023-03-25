@@ -1,9 +1,9 @@
-import engineGame from '../index.js';
+import startGame from '../index.js';
 import getRandomNum from '../getRandomNum.js';
 
 const gameTask = 'What is the result of the expression?';
 
-const gameLogic = () => {
+const generateRoundData = () => {
   const randomArrElement = Math.floor(Math.random() * 3);
   const randomNumber1 = getRandomNum(10);
   const randomNumber2 = getRandomNum(10);
@@ -18,8 +18,8 @@ const gameLogic = () => {
   return [question, answer];
 };
 
-const brainCalc = () => {
-  engineGame(gameTask, gameLogic);
+const startCalcGame = () => {
+  startGame(gameTask, generateRoundData);
 };
 
-export default brainCalc;
+export default startCalcGame;

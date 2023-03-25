@@ -1,4 +1,4 @@
-import engineGame from '../index.js';
+import startGame from '../index.js';
 
 const gameTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -21,15 +21,15 @@ const isPrime = (n) => {
 
 const getRandomArbitrary = (min, max) => Math.ceil(Math.random() * (max - min) + min);
 
-const gameLogic = () => {
+const generateRoundData = () => {
   const randomNumber = getRandomArbitrary(2, 50);
   const question = randomNumber;
   const answer = isPrime(randomNumber);
   return [question, answer];
 };
 
-const brainPrime = () => {
-  engineGame(gameTask, gameLogic);
+const startPrimeGame = () => {
+  startGame(gameTask, generateRoundData);
 };
 
-export default brainPrime;
+export default startPrimeGame;

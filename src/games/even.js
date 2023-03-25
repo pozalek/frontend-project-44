@@ -1,9 +1,9 @@
-import engineGame from '../index.js';
+import startGame from '../index.js';
 import getRandomNum from '../getRandomNum.js';
 
 const gameTask = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const gameLogic = () => {
+const generateRoundData = () => {
   const randomNumber = getRandomNum(100);
   const evenNumber = (number) => (number % 2) === 0;
   const question = randomNumber;
@@ -12,8 +12,8 @@ const gameLogic = () => {
   return [question, answer];
 };
 
-const brainEven = () => {
-  engineGame(gameTask, gameLogic);
+const startEvenGame = () => {
+  startGame(gameTask, generateRoundData);
 };
 
-export default brainEven;
+export default startEvenGame;

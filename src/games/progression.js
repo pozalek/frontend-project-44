@@ -1,4 +1,4 @@
-import engineGame from '../index.js';
+import startGame from '../index.js';
 import getRandomNum from '../getRandomNum.js';
 
 const gameTask = 'What number is missing in the progression?';
@@ -16,7 +16,7 @@ const progression = () => {
   } return arr;
 };
 
-const gameLogic = () => {
+const generateRoundData = () => {
   const arr = progression();
   const hiddenElement = getRandomArbitrary(0, arr.length - 1);
   const answer = String(arr[hiddenElement]);
@@ -27,8 +27,8 @@ const gameLogic = () => {
   return [question, answer];
 };
 
-const brainProgression = () => {
-  engineGame(gameTask, gameLogic);
+const startProgressionGame = () => {
+  startGame(gameTask, generateRoundData);
 };
 
-export default brainProgression;
+export default startProgressionGame;
