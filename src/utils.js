@@ -35,14 +35,3 @@ export const isPrimeNumber = (n) => {
 
   return 'yes';
 };
-
-export const getProgression = () => {
-  const progressionLength = getRandomNumber(4, 9);
-  let randomNumber = getRandomNumber(1, 50);
-  const progressionStep = getRandomNumber(2, 5);
-  const coll = [randomNumber];
-
-  for (let i = 0; i < progressionLength; i += 1) {
-    coll.push(randomNumber += progressionStep);
-  } return coll;
-};
