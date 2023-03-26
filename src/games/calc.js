@@ -1,12 +1,12 @@
 import startGame from '../index.js';
-import getRandomNum from '../getRandomNum.js';
+import { getRandomNumber } from '../utils.js';
 
 const gameTask = 'What is the result of the expression?';
 
 const generateRoundData = () => {
   const randomArrElement = Math.floor(Math.random() * 3);
-  const randomNumber1 = getRandomNum(10);
-  const randomNumber2 = getRandomNum(10);
+  const randomNumber1 = getRandomNumber(1, 10);
+  const randomNumber2 = getRandomNumber(1, 10);
 
   const arr = [randomNumber1 + randomNumber2, randomNumber1 - randomNumber2,
     randomNumber1 * randomNumber2];
