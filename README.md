@@ -3,10 +3,34 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/3a5508b09e7feaa12594/maintainability)](https://codeclimate.com/github/pozalek/frontend-project-44/maintainability)
 
 ## "Brain Games" project ##
-The "Brain Games" includes 5 console games.
+The "Brain Games" - a set of five console games built on the principle of popular mobile applications for brain pumping.
 
 ## Install
-Clone the repository and install all dependencies. To start the game enter the command brain-even, brain-calc etc.
+Clone the repository and install all dependencies:
+
+```
+git clone git@github.com:pozalek/frontend-project-44.git
+npm ci
+npm link
+```
+To start the game enter the command:
+```
+brain-even
+brain-calc
+brain-gcd
+brain-progression
+brain-prime
+```
+## Dependencies
+```
+readline-sync: 1.4.10
+```
+**devDependencies:** 
+```
+eslint 8.34.0
+eslint-config-airbnb-base: 15.0.0
+eslint-plugin-import: 2.27.5
+```
 
 ## Games description
 * ### brain-even
