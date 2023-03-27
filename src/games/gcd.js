@@ -13,8 +13,6 @@ const generateRoundData = () => {
   return [question, answer];
 };
 
-const startGcdGame = () => {
-  startGame(gameTask, generateRoundData);
-};
+const startGcdGame = () => startGame(gameTask, generateRoundData);
 
 export default startGcdGame;

@@ -1,11 +1,3 @@
-// export const getRandomNumber = (max) => Math.ceil(Math.random() * max);
-
-// export default getRandomNum;
-
-// export const getRandomNumber = (min, max) => {
-//   return Math.round(min - 0.5 + Math.random() * (max - min + 1));
-// };
-
 export function getRandomNumber(min, max) {
   return Math.round(min - 0.5 + Math.random() * (max - min + 1));
 }
@@ -25,7 +17,6 @@ export const isPrimeNumber = (n) => {
   } if (n === 2) {
     return 'yes';
   }
-
   const limit = Math.sqrt(n);
   for (let i = 2; i <= limit; i += 1) {
     if (n % i === 0) {

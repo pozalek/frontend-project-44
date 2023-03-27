@@ -11,8 +11,6 @@ const generateRoundData = () => {
   return [question, answer];
 };
 
-const startPrimeGame = () => {
-  startGame(gameTask, generateRoundData);
-};
+const startPrimeGame = () => startGame(gameTask, generateRoundData);
 
 export default startPrimeGame;

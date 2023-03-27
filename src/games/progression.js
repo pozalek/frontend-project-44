@@ -4,10 +4,10 @@ import { getRandomNumber } from '../utils.js';
 const gameTask = 'What number is missing in the progression?';
 
 const getProgression = () => {
-  const progressionLength = getRandomNumber(4, 9);
+  const progressionLength = getRandomNumber(5, 10);
   let randomNumber = getRandomNumber(1, 50);
   const progressionStep = getRandomNumber(2, 5);
-  const coll = [randomNumber];
+  const coll = [];
 
   for (let i = 0; i < progressionLength; i += 1) {
     coll.push(randomNumber += progressionStep);
@@ -25,8 +25,6 @@ const generateRoundData = () => {
   return [question, answer];
 };
 
-const startProgressionGame = () => {
-  startGame(gameTask, generateRoundData);
-};
+const startProgressionGame = () => startGame(gameTask, generateRoundData);
 
 export default startProgressionGame;
