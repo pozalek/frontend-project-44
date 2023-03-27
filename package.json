@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/pozalek/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/pozalek/frontend-project-44/actions)",
+  "description": "Brain Games - a set of five console games built on the principle of popular mobile applications for brain pumping.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
